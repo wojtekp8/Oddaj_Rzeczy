@@ -34,6 +34,10 @@
   h1{
     color:#3c3c3c;
     font-size: 1.5rem;
+  }
+  h2{
+    color:#3c3c3c;
+    font-size: 1.5rem;
     &:after{
       content:'';
       display:block;
@@ -44,6 +48,7 @@
       height: 25px;
     }
   }
+
   ul.menu{
     justify-content: center;
     li{

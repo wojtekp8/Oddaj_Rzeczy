@@ -20,7 +20,8 @@ class Menu extends Component{
                     <li><Link>Kontakt</Link></li>
                 </ul>
                 <div className='banner'>
-                    <h1>Zacznij pomagać!<br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
+                    <h1>Zacznij pomagać!</h1>
+                    <h2> Oddaj niechciane rzeczy w zaufane ręce</h2>
                     <ul className='menu'>
                         <li>ODDAJ RZECZY</li>
                         <li>ZOORGANIZUJ ZBIÓRKĘ</li>
