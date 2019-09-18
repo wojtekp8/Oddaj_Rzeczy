@@ -1,0 +1,8 @@
+//@import '../../node_modules/reset-css/reset.css';
+@import './settings/_colors.scss';
+@import './settings/_fonts.scss';
+
+body{
+  box-sizing: border-box;
+  font-family: $font-base,$font-alt;
+}

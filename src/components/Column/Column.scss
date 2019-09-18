@@ -1,0 +1,26 @@
+@import '../../scss/settings/fonts';
+
+.column{
+  width:33.333%;
+  height: 250px;
+  //border:1px solid green;
+  text-align: center;
+  color:#3c3c3c;
+  h1{
+    font-size: 3.8rem;
+    font-weight: lighter;
+    margin:2.5rem 0 1.5rem 0;
+  }
+  h2{
+    font-size: 0.8rem;
+  }
+  p{
+    padding:15px 50px 0 50px;
+    font-family: $font-alt;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    line-height: 18px;
+    font-weight: lighter;
+  }
+}
+

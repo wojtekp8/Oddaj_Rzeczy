@@ -1,7 +1,13 @@
-import React from 'react';
+import React,{Component} from 'react';
+import './Home.scss'
+import HomeHeader from "../HomeHeader/HomeHeader";
+import ThreeColumns from "../ThreeColumns/ThreeColumns";
 
 function Home(){
-    return(<h1>Titlesssa</h1>);
+    return(<>
+            <HomeHeader/>
+            <ThreeColumns/>
+    </>);
 }
 
 export default Home;
