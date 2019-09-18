@@ -1,0 +1,74 @@
+.simpleSteps{
+  width:100%;
+  height:125px;
+  background-color: white;
+  h2{
+    margin:2rem 0 0 0;
+    color:#3c3c3c;
+    font-size: 1.5rem;
+    &:after{
+      content:'';
+      display:block;
+      background-image: url("../../assets/Decoration.svg");
+      background-size: contain;
+      margin:14px auto;
+      width:190px;
+      height: 25px;
+    }
+  }
+  button{
+    box-sizing: border-box;
+    margin:2rem 0 0 0;
+    background-color: white;
+    width:180px;
+    height: 80px;
+    padding:15px;
+    border:1px solid #737373;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color:#737373;
+  }
+}
+.simpleStepsIcon{
+  width:100%;
+  height:240px;
+  background-color: lightgray;
+  .step{
+    text-align: center;
+    font-size: 0.8rem ;
+    //border:1px solid red;
+    margin: 2rem 2rem 0 4rem;
+    width:120px;
+    height: 160px;
+    &:nth-of-type(n):before{
+      content:'';
+      display:block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin:14px auto;
+      width:100%;
+      height: 50px;
+    }
+    &:nth-of-type(1):before{
+      background-image: url("../../assets/Icon-1.svg");
+    }
+    &:nth-of-type(2):before{
+      background-image: url("../../assets/Icon-2.svg");
+    }
+    &:nth-of-type(3):before{
+      background-image: url("../../assets/Icon-3.svg");
+    }
+    &:nth-of-type(4):before{
+      background-image: url("../../assets/Icon-4.svg");
+    }
+    h3:after{
+      content:'';
+      display:block;
+      border-top:1px solid #3c3c3c;
+      width:50%;
+      margin: 6px auto;
+    }
+  }
+
+}
