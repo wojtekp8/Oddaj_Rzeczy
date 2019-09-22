@@ -1,9 +1,10 @@
 .simpleSteps{
   width:100%;
   height:125px;
+  margin:0 0 2rem 0;
   background-color: white;
   h2{
-    margin:2rem 0 0 0;
+    margin:4rem 0 0 0;
     color:#3c3c3c;
     font-size: 1.5rem;
     &:after{
@@ -32,7 +33,7 @@
 .simpleStepsIcon{
   width:100%;
   height:240px;
-  background-color: lightgray;
+  background-color: #F0F1F1;
   .step{
     text-align: center;
     font-size: 0.8rem ;

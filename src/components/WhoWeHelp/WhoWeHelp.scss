@@ -1,0 +1,75 @@
+@import '../../scss/settings/fonts';
+.whoWeHelp{
+  width:100%;
+  height: 700px;
+  background-color: white;
+  .container{
+    flex-direction: column;
+    .navigation{
+      box-sizing: border-box;
+      margin:0 auto;
+      padding:4rem;
+      width:60%;
+      height: 400px;
+      p{
+        margin-top:3rem;
+        font-size: 0.9rem;
+        color: #737373;
+      }
+    }
+    .content{
+      width:100%;
+      height: 300px;
+      background-color: white;
+      .record{
+        margin: 0 auto 20px;
+        width:80%;
+        height: 60px;
+        font-family: $font-alt;
+        border-bottom: 1px solid #737373;
+        &:nth-child(3){
+          border-bottom: none;
+        }
+        p{
+          font-size:0.6rem;
+        }
+        .titleTags{
+          height: 40%;
+          display: flex;
+          justify-content: space-between;
+          h3{
+            font-size:1rem;
+            font-weight: 100;
+          }
+        }
+      }
+      .buttons li button{
+        margin:0 1rem 0 0;
+        padding: 2px;
+        width:20px;
+        height:30px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  li{
+    float:left;
+    button {
+      box-sizing: border-box;
+      margin: 2rem 0 0 1rem;
+      background-color: white;
+      width: 140px;
+      height: 70px;
+      padding: 15px;
+      border: 1px solid #737373;
+      font-size: 1rem;
+      font-weight: 100;
+      color: #737373;
+    }
+  }
+}

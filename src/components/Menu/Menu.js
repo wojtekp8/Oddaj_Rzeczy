@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {HashRouter,Route,Switch,NavLink} from 'react-router-dom';
-
+import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import './Menu.scss';
 
@@ -14,7 +14,7 @@ class Menu extends Component{
                 </ul>
                 <ul className='menu'>
                     <li><Link>Start</Link></li>
-                    <li><Link>O co chodzi?</Link></li>
+                    <li><Link >O co chodzi?</Link></li>
                     <li><Link>O nas</Link></li>
                     <li><Link>Fundacja i organizacje</Link></li>
                     <li><Link>Kontakt</Link></li>
@@ -23,8 +23,8 @@ class Menu extends Component{
                     <h1>Zacznij pomagać!</h1>
                     <h2> Oddaj niechciane rzeczy w zaufane ręce</h2>
                     <ul className='menu'>
-                        <li>ODDAJ RZECZY</li>
-                        <li>ZOORGANIZUJ ZBIÓRKĘ</li>
+                        <li><NavLink to='/Zaloguj/' className='loggin'>ODDAJ RZECZY</NavLink></li>
+                        <li><NavLink to='/Zaloguj/' className='loggin'>ZOORGANIZUJ ZBIÓRKĘ</NavLink></li>
                     </ul>
                 </div>
             </>
