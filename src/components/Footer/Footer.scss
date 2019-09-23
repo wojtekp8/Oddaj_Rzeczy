@@ -1,0 +1,29 @@
+footer {
+  width: 100%;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  div{
+  }
+  p {
+    font-size: 0.8rem;
+    float: left;
+  }
+  ul li{
+    display:inline-block;
+    a{
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      margin-left:1rem;
+      &.facebook{
+        background-image: url("../../assets/Facebook.svg");
+      }
+      &.instagram {
+        background-image: url("../../assets/Instagram.svg");
+      }
+    }
+
+  }
+}

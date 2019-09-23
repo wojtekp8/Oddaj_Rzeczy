@@ -1,0 +1,81 @@
+.contact{
+  width:100%;
+  height:600px;
+  display: flex;
+
+  .form{
+    width:50%;
+    height: 600px;
+    //border:1px solid red;
+
+    text-align: center;
+    h2 {
+      margin: 6rem 0 0 0;
+      color: #3c3c3c;
+      font-size: 1.5rem;
+      &:after {
+        content: '';
+        display: block;
+        background-image: url("../../assets/Decoration.svg");
+        background-size: contain;
+        margin: 14px auto;
+        width: 190px;
+        height: 25px;
+      }
+    }
+    form{
+      margin:3rem auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      div{
+        //border: 1px solid pink;
+        float:left;
+      }
+      label{
+        display: block;
+        text-align: left;
+        font-size: 0.6rem;
+        font-weight: 900;
+      }
+      input{
+        margin:0 1rem 1rem 0;
+        height:30px;
+        width:150px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom: 1px solid #737373;
+        font-size:1rem;
+        color:lightgrey;
+      }
+      textarea{
+        display: block;
+        margin:0 10px 10px 0;
+        height:100px;
+        width:320px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom: 1px solid #737373;
+        font-size:1rem;
+        color:lightgrey;
+      }
+      button{
+        width:80px;
+        height:30px;
+        font-size: 0.8rem;
+        background-color: white;
+        border: 1px solid #737373;
+        margin-left:15rem;
+      }
+    }
+  }
+  .contactImg{
+    width: 50%;
+    background-image: url("../../assets/Background-Contact-Form.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+}

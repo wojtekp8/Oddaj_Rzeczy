@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
 import {HashRouter,Route,Switch,NavLink} from 'react-router-dom';
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, animateScroll as scroll } from "react-scroll";
 import './Menu.scss';
 
 class Menu extends Component{
+
     render(){
         return (
             <>
@@ -13,11 +13,21 @@ class Menu extends Component{
                     <li><NavLink to='/Zaloz_konto/' className='loggin'>Załóż konto</NavLink></li>
                 </ul>
                 <ul className='menu'>
-                    <li><Link>Start</Link></li>
-                    <li><Link >O co chodzi?</Link></li>
-                    <li><Link>O nas</Link></li>
-                    <li><Link>Fundacja i organizacje</Link></li>
-                    <li><Link>Kontakt</Link></li>
+                    <li><NavLink  exact to={"/"}>Start</NavLink></li>
+                    <li><Link activeClass="active"
+                        to="test"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration= {500}>O co chodzi?</Link></li>
+                    <li><Link activeClass="active"
+                              to="test2"
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {500}>O nas</Link></li>
+                    <li><Link to="test">Fundacja i organizacje</Link></li>
+                    <li><Link to="test">Kontakt</Link></li>
                 </ul>
                 <div className='banner'>
                     <h1>Zacznij pomagać!</h1>
