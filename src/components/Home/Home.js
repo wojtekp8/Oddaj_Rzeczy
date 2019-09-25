@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import './Home.scss'
 import HomeHeader from "../HomeHeader/HomeHeader";
 import ThreeColumns from "../ThreeColumns/ThreeColumns";
@@ -15,8 +15,8 @@ function Home(){
 
             <ThreeColumns/>
             <SimpleSteps />
-            <AboutUs id='test2'/>
-            <WhoWeHelp id='test'/>
+            <AboutUs />
+            <WhoWeHelp />
             <Contact/>
             <Footer/>
     </>);

@@ -6,7 +6,7 @@ import Column from '../Column/Column'
 class ThreeColumns extends Component{
     render(){
         return(<>
-            <article className='threeColumns'>
+            <article name='threeColumns' className='threeColumns'>
                 <div className='container'>
                     <Column number={10} text='ODDANYCH WORKÓW'/>
                     <Column number={5} text='WSPARTYCH ORGANIZACJI'/>

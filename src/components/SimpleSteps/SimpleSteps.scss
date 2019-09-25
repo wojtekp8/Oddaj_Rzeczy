@@ -17,17 +17,27 @@
       height: 25px;
     }
   }
-  button{
-    box-sizing: border-box;
-    margin:2rem 0 0 0;
-    background-color: white;
-    width:180px;
-    height: 80px;
-    padding:15px;
-    border:1px solid #737373;
-    font-size: 1.4rem;
-    font-weight: 100;
-    color:#737373;
+  ul.menu{
+    justify-content: center;
+    li{
+      //box-sizing: border-box;
+      width:180px;
+      height: 80px;
+      text-align: center;
+      border:1px solid #737373;
+      margin:2rem 0 0 0;
+    }
+    a {
+      display: block;
+      padding:18px;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 100;
+      color:black;
+      &:hover {
+        border: 0;
+      }
+    }
   }
 }
 .simpleStepsIcon{

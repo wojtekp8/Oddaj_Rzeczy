@@ -1,0 +1,29 @@
+
+@import '../../scss/settings/fonts';
+.record{
+  margin: 0 auto 20px;
+  width:80%;
+  height: 60px;
+  font-family: $font-alt;
+  border-bottom: 1px solid #737373;
+  &:nth-child(3){
+    border-bottom: none;
+  }
+  p{
+    font-size:0.6rem;
+  }
+  .titleTags{
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    h3{
+      font-size:1rem;
+      font-weight: 100;
+    }
+  }
+  .description{
+    p{
+      font-style: italic;
+    }
+  }
+}

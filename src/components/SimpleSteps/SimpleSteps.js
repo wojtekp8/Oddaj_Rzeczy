@@ -1,10 +1,11 @@
-import React,{Component} from 'react';
+import React from 'react';
 import './SimpleSteps.scss';
+import {NavLink} from "react-router-dom";
 
 function SimpleSteps(){
     return(
         <>
-            <article className='simpleSteps'>
+            <article name='simpleSteps' className='simpleSteps'>
                 <div className='container'>
                     <h2>Wystarczą 4 proste kroki</h2>
                 </div>
@@ -18,7 +19,10 @@ function SimpleSteps(){
                 </div>
             </article>
             <article className='simpleSteps'>
-                <div className='container'><button>ODDAJ RZECZY</button></div>
+                {/*<div className='container'><button>ODDAJ RZECZY</button></div> */}
+                <ul className='menu'>
+                    <li><NavLink to='/logowanie' className='loggin'>ODDAJ RZECZY</NavLink></li>
+                </ul>
             </article>
         </>
     )
