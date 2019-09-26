@@ -33,12 +33,13 @@ class WhoWeHelp extends Component{
     };
 
     handleClick=(event,i)=>{this.setState({currentPage:i})};
-    setContent=(event,i)=>{this.setState({currentContent: i})};
+    setContent=(i)=>{
+        console.log('switching to =>'+ i);
+        this.setState({currentContent: i})};
     render(){
 
         const {fundations,organisations,local,currentPage,recordPerPage,currentContent}=this.state;
         let content=0;
-
         if(currentContent===1){
             content=fundations;
         }else if(currentContent===2){
@@ -57,7 +58,6 @@ class WhoWeHelp extends Component{
         const numberOfPages=Math.ceil(content.length/recordPerPage);
         if(numberOfPages>1){
             for (let i = 1; i <= numberOfPages; i++) {
-
                 const element = <li key={i}
                                     onClick={e => this.handleClick(e, i)}
                                     className={this.state.currentPage === i ? "active" : ""}>
@@ -73,9 +73,9 @@ class WhoWeHelp extends Component{
                     <div className='navigation banner'>
                         <h2>Komu pomagamy?</h2>
                         <ul className='buttons'>
-                            <li><button onClick={e=>this.setContent(e,1)} className={currentContent===1 ? "active":""}>Fundacjom</button></li>
-                            <li><button onClick={e=>this.setContent(e,2)} className={currentContent===2 ? "active":""}>Organizacjom pozarządowym</button></li>
-                            <li><button onClick={e=>this.setContent(e,3)} className={currentContent===3 ? "active":""}>Lokalnym zbiórkom</button></li>
+                            <li><button onClick={e=>this.setContent(1)} className={currentContent===1 ? "active":""}>Fundacjom</button></li>
+                            <li><button onClick={e=>this.setContent(2)} className={currentContent===2 ? "active":""}>Organizacjom pozarządowym</button></li>
+                            <li><button onClick={e=>this.setContent(3)} className={currentContent===3 ? "active":""}>Lokalnym zbiórkom</button></li>
                         </ul>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a,
                             scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. </p>

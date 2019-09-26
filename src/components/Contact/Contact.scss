@@ -7,7 +7,6 @@
     width:50%;
     height: 600px;
     //border:1px solid red;
-
     text-align: center;
     h2 {
       margin: 6rem 0 0 0;
@@ -23,6 +22,11 @@
         height: 25px;
       }
     }
+    h3{
+      color:forestgreen;
+      font-size:0.8rem;
+      font-weight: bold;
+    }
     form{
       margin:3rem auto;
       display: flex;
@@ -31,15 +35,22 @@
       div{
         //border: 1px solid pink;
         float:left;
+        h3{
+          text-align: left;
+          font-size:0.6rem;
+          color:red;
+
+        }
       }
       label{
+        margin:1rem 0 0 0 ;
         display: block;
         text-align: left;
         font-size: 0.6rem;
         font-weight: 900;
       }
       input{
-        margin:0 1rem 1rem 0;
+        margin:0 1rem 0rem 0;
         height:30px;
         width:150px;
         border-top:none;
@@ -47,7 +58,6 @@
         border-right:none;
         border-bottom: 1px solid #737373;
         font-size:1rem;
-        color:lightgrey;
       }
       textarea{
         display: block;
@@ -59,7 +69,17 @@
         border-right:none;
         border-bottom: 1px solid #737373;
         font-size:1rem;
-        color:lightgrey;
+        resize: none;
+      }
+      ::placeholder {
+        color: lightgray;
+        opacity: 1; /* Firefox */
+      }
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: lightgray;
+      }
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: lightgray;
       }
       button{
         width:80px;
